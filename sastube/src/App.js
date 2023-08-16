@@ -89,7 +89,7 @@ function App() {
   
 
   return (
-    <div>
+    <>
       <Navbar img={data} name={name} valid={valid} fun1={()=>{setload(true)}} fun2={showcart}/>
       <div className="satya">
       {cart && <Cart data={cartdata} />}
@@ -102,7 +102,7 @@ function App() {
       </BrowserRouter>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
