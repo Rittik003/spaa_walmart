@@ -36,33 +36,35 @@ const Login=(props) =>{
     }
   return (
     <div>
-      <div className="login-container">
-      <form className="login-form">
-        <h2>Login</h2>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
+      <div className="container text-info1">
+      <h2>Login</h2>
+      <form >
+        <div className="form-group" >
+          <label htmlFor="email">Email:</label><br />
           <input
             type="email"
             id="email"
             value={val.email}
-           onChange={(e)=>{fun(e,'email')}}
+            onChange={(e)=>{fun(e,'email')}}
             placeholder="Enter your email"
+            className='form-control'
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password">Password:</label><br />
           <input
             type="password"
             id="password"
             value={val.password}
             onChange={(e)=>{fun(e,'password')}}
             placeholder="Enter your password"
+            className="form-control"
             required
           />
         </div>
-        <button type="button" onClick={handleSubmit}>Login</button>
       </form>
+      <button type="button" onClick={handleSubmit}>Login</button>
     </div>
     </div>
   )

@@ -57,7 +57,7 @@ export default function Cart(props) {
           </div>
         )}
 
-        <button>
+        <button style={{marginTop:"16px"}}>
           <h2>PROCEED TO CHECKOUT</h2>
         </button>
       </div>
